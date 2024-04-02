@@ -1,0 +1,85 @@
+/* App.css */
+
+/* Styles for dropdown */
+select {
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .form-select{
+    background-color: #f0f0f0; /* Background color */
+  border: 1px solid #ccc; /* Border color */
+  color: #555; /* Text color */
+  padding: 8px 12px; /* Padding */
+  font-size: 14px; /* Font size */
+  border-radius: 4px; /* Border radius */
+  width: 200px; /* Width */
+  /* cursor: not-allowed; */
+  }
+
+  .form-select option[selected] {
+    font-weight: bold; /* Bold font for selected option */
+  }
+  
+  /* Styles for table */
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Styles for table cells based on price */
+  td {
+    font-weight: bold;
+  }
+  
+  td.green {
+    color: green;
+  }
+  
+  td.red {
+    color: red;
+  }
+  
+  /* Styles for pagination */
+  div {
+    margin: 10px auto;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
