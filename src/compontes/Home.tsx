@@ -44,6 +44,7 @@ const Home: React.FC = () => {
       setShowButton(true);
       setNumberOfDays(0);
       setCurrentPage(1);
+      toast.success(`Statistics of day ${pages[0]}`)
 
     }
   },[selectedStock])
@@ -72,6 +73,7 @@ const Home: React.FC = () => {
   const prevPageChange = (pageNumber: number): void => {
     if (pageNumber - 1 >= 0) {
       setNumberOfDays(pageNumber - 1);
+      toast.success(`Statistics of day ${pages[numberOfDays-1]}`)
     }
     else{
       toast.error("You can't move Previous")
@@ -81,6 +83,8 @@ const Home: React.FC = () => {
   const nextPageChange = (page: number): void => {
     if (page + 1 !== 3) {
       setNumberOfDays(page + 1);
+      toast.success(`Statistics of day ${pages[numberOfDays+1]}`)
+
     }
     else{
       toast.error("You can't move Forword")
